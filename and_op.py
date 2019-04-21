@@ -12,7 +12,7 @@ af1 = F.relu
 def AND(x):
     return af1(layer1(x))
 
-in_data = np.array([[1,1],[0,1],[1,0],[0,0]], dtype=np.float32) # input data
+in_data = np.array([[1,1],[0,1],[1,0],[0,0]], dtype=np.float32)
 out_data = AND(in_data).data
 
 for i in range(0, len(in_data)):
